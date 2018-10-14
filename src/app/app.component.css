@@ -1,0 +1,12 @@
+.container{
+    background-image: url('../assets/imagenes/juegos1.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ 
+}
+/*
+body{
+    background-image: url('/src/assets/imagenes/juegos1.jpg');
+ 
+}*/

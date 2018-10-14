@@ -1,0 +1,182 @@
+<!--<div class="container" >
+    <div class="card  ">
+      <img class="img-thumbnail"   src="./assets/imagenes/cerebro.jpg" alt="Avatar" style="width:100%">
+      <h1>Velocidad y agilidad aritmética </h1>
+      <p class="title">Juego de agilidad mental</p>
+      <p>UTN FRA </p>
+  
+      <a href="#"><i class="fa fa-dribbble"></i></a> 
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <p>           <button class="button"  (click)="Juego('Agilidad')">Jugar</button></p>
+    
+    </div>
+  
+    <div class="card">
+      <img class="img-thumbnail" src="./assets/imagenes/ppt.jpg" alt="Avatar" style="width:100%">
+      <h1>Piedra Papel o Tijera</h1>
+      <p class="title">Juega contra la máquina</p>
+      <p>UTN FRA </p>
+      
+      <a href="#"><i class="fa fa-dribbble"></i></a> 
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <p>           <button class="button"  (click)="Juego('PPT')">Jugar</button></p>
+    </div>
+    <div class="card">
+      <img  class="img-thumbnail"  src="./assets/imagenes/adivina.png" alt="Avatar" style="width:100%">
+      <h1>Adivina el número secreto</h1>
+      <p class="title">Juega de estrategia</p>
+      <p>UTN FRA </p>
+      
+      <a href="#"><i class="fa fa-dribbble"></i></a> 
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <p>           <button class="button"  (click)="Juego('Adivina')">Jugar</button></p>
+    </div>
+  </div>
+  <div class="card" style="widows: 800px">
+    <h5 class="card-header">Velocidad y agilidad aritmética</h5>
+    <div class="card-body">
+        <img   src="./assets/imagenes/cerebro.jpg" >
+        <h5 id="texto" >
+        Juego de agilidad mental 
+          <br>
+          <br>
+         UTN FRA 
+      <br> <br>
+      <a href="#" id="texto"><i class="fa fa-dribbble"></i></a> 
+      <a href="#" id="texto"><i class="fa fa-twitter"></i></a> 
+      <a href="#" id="texto"><i class="fa fa-linkedin"></i></a> 
+      <a href="#" id="texto"><i class="fa fa-facebook"></i></a> 
+      <br>
+
+      
+      <button class="btn btn-primary btn-sm float-right"  (click)="Juego('Adivina')">Jugar</button>
+        </h5>
+    </div>
+  </div>-->
+
+
+
+
+  <section id="team" class="pb-5">
+      <div class="container">
+        
+          <div class="row">
+             
+              <!--primero-->
+              <div class="col-xs-12 col-sm-6 col-md-4">                 
+              <div class="card">
+              <div class="card-body text-center">
+              <p>   <img  src="../../../assets/imagenes/velocidad.png"
+               class="img-rounded center-block"></p>
+              <h4 class="card-title">Velocidad y agilidad aritmética</h4>
+              <p class="card-text">Juego de agilidad mental
+                <br>
+                UTN
+              </p>
+              <a id="boton"class="btn btn-primary btn-lg" (click)="Juego('Agilidad')" >Jugar <i class="fa fa-gamepad"></i></a>
+              </div>
+              </div>
+              </div>
+
+              <!--Segundo-->
+              <div class="col-xs-12 col-sm-6 col-md-4">                 
+                  <div class="card">
+                  <div class="card-body text-center">
+                  <p>   <img src="../../../assets/imagenes/papel.png"
+                   class="img-rounded center-block"></p>
+                  <h4 class="card-title">Piedra Papel o Tijera</h4>
+                  <br>
+                  <p class="card-text">Juega contra la máquina
+                      <br>
+                      UTN
+                  </p>
+                  <a id="boton" class="btn btn-primary btn-lg" (click)="Juego('PPT')">Jugar    <i class="fa fa-gamepad"></i></a>
+                  </div>
+                  </div>
+                  </div>
+
+                  <!--tercero-->
+              <div class="col-xs-12 col-sm-6 col-md-4">                 
+                  <div class="card">
+                  <div class="card-body text-center">
+                  <p>   <img src="../../../assets/imagenes/cubos.png"
+                   class="img-rounded center-block"></p>
+                  <h4 class="card-title">Adivina el número secreto</h4>
+                  <br>
+                  <p class="card-text">Juega de estrategia.
+                      <br>
+                      UTN
+                  </p>
+                  <a id="boton" class="btn btn-primary btn-lg" (click)="Juego('Adivina')" >Jugar <i class="fa fa-gamepad"></i></a>
+                  </div>
+                  </div>
+                  </div>
+
+            </div>
+            <div class="row" >
+
+                   <!--cuarta-->
+              <div class="col-xs-12 col-sm-6 col-md-6">                 
+                <div class="card">
+                <div class="card-body text-center">
+                <p>   <img  src="../../../assets/imagenes/sudoku.png"
+                 class="img-rounded center-block"></p>
+                <h4 class="card-title">Sumando 15</h4>
+                <p class="card-text">Juego de agilidad mental Suma de numeros
+                  <br>
+                  UTN
+                </p>
+                <a id="boton"class="btn btn-primary btn-lg" (click)="Juego('Sumando')" >Jugar <i class="fa fa-gamepad"></i></a>
+                </div>
+                </div>
+                </div>
+  
+                <!--quinta-->
+                <div class="col-xs-12 col-sm-6 col-md-6">                 
+                    <div class="card">
+                    <div class="card-body text-center">
+                    <p>   <img src="../../../assets/imagenes/anagrama.png"
+                     class="img-rounded center-block"></p>
+                    <h4 class="card-title">Anagrama</h4>
+                   
+                    <p class="card-text">Resuelve el Anagrama
+                        <br>
+                        UTN
+                    </p>
+                    <a id="boton" class="btn btn-primary btn-lg" (click)="Juego('Anagrama')">Jugar    <i class="fa fa-gamepad"></i></a>
+                    </div>
+                    </div>
+                    </div>
+  
+                    <!--sexta
+                <div class="col-xs-12 col-sm-6 col-md-4">                 
+                    <div class="card">
+                    <div class="card-body text-center">
+                    <p>   <img src="../../../assets/imagenes/cubos.png"
+                     class="img-rounded center-block"></p>
+                    <h4 class="card-title">Adivina el número secreto</h4>
+                    <br>
+                    <p class="card-text">Juega de estrategia.
+                        <br>
+                        UTN
+                    </p>
+                    <a id="boton" class="btn btn-primary btn-lg" (click)="Juego('Anagrama')" >Jugar <i class="fa fa-gamepad"></i></a>
+                    </div>
+                    </div>
+                    </div>-->
+               
+
+             
+  
+          </div>
+      </div>
+  </section>
+
+
+  

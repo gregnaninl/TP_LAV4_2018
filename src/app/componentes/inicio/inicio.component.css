@@ -1,0 +1,124 @@
+
+/*.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    /*max-width: 300px;
+   height: 100%;
+    margin: 10px;
+    padding-bottom: 10px;
+    float: left;
+  background-color: #DEF3A6;
+    text-align: center;
+}*/
+
+/* Add rounded corners to the top left and the top right corner of the image */
+/*img {
+    border-radius: 5px 5px 0 0;
+    width: 200px;
+    height: 200px;
+}/* Add some padding inside the card container */
+.container {
+    padding: 40px 16px;
+ 
+  
+  
+   
+}
+#team{
+  background-image: url('../../../assets/imagenes/juegos1.jpg');
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+
+.button{
+    margin-left: 1px;
+    display: inline-block;
+    width: 90%;
+    padding: 5px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+    border: none;
+    outline: 0;
+ 
+    padding: 8px;
+    color: white;
+   /* background-color: #000;*/
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #texto{
+    display: inline-block;
+    vertical-align: top;
+  }
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 400px;
+    height: 200px;
+}
+
+.overlay-card{
+    background-color:#222;
+   
+    padding-top:25px;
+    border-radius: 5px; 
+   
+    max-width: 300px;
+    height: 100%;
+  }
+  .card{    
+    
+    background-color: rgb(73, 73, 73);
+    margin-right: 0,5px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+    border-width:7px;
+    
+}
+  .img-rounded{
+    border-style:solid;
+    border-color:black;
+    border-width:3px;
+    border-radius:100px;
+    height:100px;
+    width:100px;
+    margin-bottom:10px;
+  }
+  #boton{
+      background-color: rgb(68, 4, 105);
+      border-color:rgb(68, 4, 105);
+  }
+
+  #boton:hover {
+    background: white;
+    color: rgb(68, 4, 105) !important;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+    height: 80px;
+}

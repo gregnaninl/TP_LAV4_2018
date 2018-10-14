@@ -1,0 +1,46 @@
+<!-- <ul class="nav nav-pills nav-justified">
+  <li class="active"><a routerLink="/Principal">Ir a inicio</a></li>
+  <li><a (click)="TraerTodos()">Todos los jugadores</a></li>
+  <li><a (click)="TraerGanadores()">Los ganadores</a></li>
+  <li><a (click)="TraerPerdedores()">Los perdedores</a></li>
+</ul>-->
+
+
+
+<section id="team" class="pb-5">
+  <div class="titulo">
+    <h1>Listado de jugadores</h1>
+  </div>
+<br>
+<br>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Mail</th>
+        <!-- <th>Juego</th>
+   <th>sexo</th>
+      <th>gano</th>-->
+    </tr>
+  </thead>
+  <tbody>
+    <!--  <tr *ngFor="let juego of listado">
+         
+          <td>{{juego.jugador}} </td> 
+          <td>{{juego.nombre}} </td>  --> 
+      <tr *ngFor="let jugador of arrayUsuarios" >  
+      <td>{{jugador.mail}} </td>
+     <!-- <td>{{jugador.clave}} </td> 
+     <td>{{jugador.sexo | sexo| uppercase}} </td> 
+      <td>{{jugador.gano}} </td> -->
+      
+    </tr>
+   
+  </tbody>
+</table>
+<div class="boton">
+    <button id="boton" class="btn btn-primary btn-lg" routerLink="/Juegos">Volver    </button>
+  </div>
+
+
+</section>

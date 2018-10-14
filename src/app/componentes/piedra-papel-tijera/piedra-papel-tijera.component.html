@@ -1,0 +1,29 @@
+<section id="team" class="pb-5">
+
+
+<div class="container estilosContainer">
+
+  <div class="titulo">
+    <h1>{{nuevoJuego.nombre}}</h1>
+</div>
+
+  <form>
+   
+  <h2 [hidden]="ocultarOpcionMaquina">La maquina elegió</h2>
+  <img [hidden]="ocultarOpcionMaquina" src="../../../assets/imagenes/PPT/{{nuevoJuego.imagenMaquina}}" width="300px" height="300px">
+  <br><br>
+  <div *ngIf="nuevoJuego.imagenesUsuario != null">
+  <h2>Elegí tu respuesta</h2>
+  <h2><p [hidden]="ocultarSpinner" ><i class="fa fa-spinner fa-spin"></i>Verificando que eligio la maquina.</p></h2>
+          <br><br>
+          <button (click)="verificar('piedra')" class="btnOpciones" value="piedra" id="btn1"><img src="../../../assets/imagenes/PPT/{{nuevoJuego.imagenesUsuario[0]['path']}}" width="200px" height="200px"></button>
+          <button (click)="verificar('papel')" class="btnOpciones" value="papel" id="btn2"><img src="../../../assets/imagenes/PPT/{{nuevoJuego.imagenesUsuario[1]['path']}}" width="200px" height="200px"></button>
+          <button (click)="verificar('tijera')" class="btnOpciones" value="tijera" id="btn3"><img src="../../../assets/imagenes/PPT/{{nuevoJuego.imagenesUsuario[2]['path']}}" width="200px" height="200px"></button>
+        </div>
+  <button  id="boton"  *ngIf="nuevoJuego.imagenMaquina == null" class="btnNuevoJuego" (click)="generar()">Comenzar Nuevo Juego</button>
+  </form>
+  <br><br><br>
+  </div>
+  <div id="snackbar">{{Mensajes}}</div>
+
+</section>

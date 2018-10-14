@@ -1,0 +1,47 @@
+
+<section id="team" class="pb-5">
+
+    <div class="container estilosContainer">
+        <div class="titulo">
+            <h1> Velocidad y agilidad aritmética</h1>
+        </div>
+    <form>
+   
+        <ul class="list-group">
+            <li class="list-group-item">
+             <input [(ngModel)]="nuevoJuego.numeroUno" placeholder="Primer número" name="numeroIngresado" type="text" class="form-control" style="width:50%" readonly/>
+           
+           </li>
+           <li class="list-group-item">
+             <input [(ngModel)]="nuevoJuego.operador" placeholder=" Operador" name="numeroIngresado" type="text" class="form-control" style="width:50%" readonly/>
+             
+           </li>
+           <li class="list-group-item">
+            <input [(ngModel)]="nuevoJuego.numeroDos" placeholder="  Segundo número" name="numeroIngresado" type="text" class="form-control" style="width:50%" readonly/>
+             
+           </li>
+           <li class="list-group-item">
+             <input [(ngModel)]="nuevoJuego.resultadoJugador" placeholder="ingrese  Respuesta" name="numeroIngresado" type="text" class="form-control" style="width:50%"/>
+              
+            </li>
+            <li class="list-group-item">
+             <h2 [hidden]="ocultarVerificar" ><button (click)="verificar()" class="btn btn-success btn-lg">Verificar {{Tiempo}} </button></h2>
+           </li>
+           <li class="list-group-item">
+             <h2 [hidden]="!ocultarVerificar"><button  (click)="NuevoJuego()"  class="btn btn-info btn-lg">Nuevo</button></h2>
+           </li>
+           <li class="list-group-item">
+             <h2><p><i class="fa fa-spinner fa-spin"></i>Esperando numero...</p></h2>
+         
+             <h3 [hidden]="!nuevoJuego.gano">usted adivino el número</h3>
+             <h3 [hidden]="nuevoJuego.gano">usted aún no gano </h3>
+           </li>
+         </ul>
+    
+      </form>
+      <div id="snackbar">{{Mensajes}}</div>
+    </div>
+   
+  
+  </section>
+  

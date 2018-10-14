@@ -1,0 +1,53 @@
+.container {
+    padding: 40px 16px;
+ 
+  
+  
+   
+}
+#team{
+  background-image: url('../../../assets/imagenes/juegos1.jpg');
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+.titulo{
+    margin: auto;
+    padding: auto;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.table{
+    margin: auto;
+    padding: auto;
+    background-color: gray;
+    max-width: 800px;
+    text-align: center;
+    color: white; 
+    
+}
+
+thead{
+    background-color: rgb(51, 48, 48);
+    color: white;
+}
+
+.boton{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#boton{
+    background-color: rgb(68, 4, 105);
+    border-color:rgb(68, 4, 105);
+}
+
+#boton:hover {
+  background: white;
+  color: rgb(68, 4, 105) !important;
+}
