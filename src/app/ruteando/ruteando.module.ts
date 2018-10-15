@@ -13,6 +13,7 @@ import { AdivinaMasListadoComponent } from '../componentes/adivina-mas-listado/a
 import { AgilidadMasListadoComponent } from '../componentes/agilidad-mas-listado/agilidad-mas-listado.component';
 import { ListadoComponent } from'../componentes/listado/listado.component'
 import { ListadosComponent } from '../componentes/listados/listados.component';
+
 import { JuegosComponent } from '../componentes/juegos/juegos.component';
 import { RegistroComponent } from '../componentes/registro/registro.component';
 import { MenuCardComponent } from '../componentes/menu-card/menu-card.component';
@@ -36,6 +37,7 @@ const MiRuteo = [
 {path: 'Registro' , component: RegistroComponent},
 {path: 'Principal' , component: InicioComponent},
 {path: 'Listado' , component: ListadoComponent},
+{path: 'Listados' , component: ListadosComponent},
 {path: 'Paises' , component: ListadoDePaisesComponent},
 {path: 'Resultados' , component: ListadoDeResultadosComponent},
 
@@ -43,7 +45,7 @@ const MiRuteo = [
 component: JuegosComponent ,
 children:
      [{path: '' , component: MenuCardComponent},
-     {path: 'Adivina' , component: AdivinaElNumeroComponent},
+     {path: 'Adivina' , component: ListadoDeResultadosComponent },
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
       {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
       {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
@@ -51,6 +53,15 @@ children:
       {path: 'Sumando' , component: SumandoComponent},
       {path: 'Anagrama' , component: AnagramaComponent}]
 },
+/*
+{ path: 'Listados' ,
+component: ListadosComponent ,
+children:
+     [{path: '' , component: ListadosComponent},
+     {path: 'Jugadores' , component: JugadoresListadoComponent},
+      {path: 'Resultados' , component: ListadoDeResultadosComponent}]
+},*/
+
 {path: '**' , component: ErrorComponent},
 {path: 'error' , component: ErrorComponent}];
 

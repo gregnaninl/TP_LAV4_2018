@@ -1,9 +1,16 @@
 .contenido{
   
     background-image: url('../../../assets/imagenes/juegos1.jpg');
-    min-height: 650px;
+    width: 100%;  
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contenedorTabla{
     color: white;

@@ -11,6 +11,8 @@ export class ListadoDeResultadosComponent implements OnInit {
  listado: Array<any>;
  listado1: Array<any>;
 
+ 
+
   constructor() {
     this.listado= JSON.parse(localStorage.getItem("Resultados"));
    }
