@@ -31,6 +31,7 @@ import  { InicioComponent } from '../componentes/inicio/inicio.component';
 const MiRuteo = [
 {path: 'Jugadores' , component: JugadoresListadoComponent},
 {path: '' , component: LoginComponent},
+{path: 'Inicio' , component: InicioComponent},
 {path: 'Login' , component: LoginComponent},
 {path: 'Mapa' , component: MapaDeGoogleComponent},
 {path: 'QuienSoy' , component: QuienSoyComponent},
@@ -45,7 +46,7 @@ const MiRuteo = [
 component: JuegosComponent ,
 children:
      [{path: '' , component: MenuCardComponent},
-     {path: 'Adivina' , component: ListadoDeResultadosComponent },
+     {path: 'Adivina' , component: AdivinaElNumeroComponent },
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
       {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
       {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
